@@ -8,4 +8,4 @@ set(CMAKE_CXX_EXTENSIONS NO)
 find_package(Halide REQUIRED)
 
 add_executable(learn_halide main.cpp)
-target_link_libraries(learn_halide PRIVATE Halide::Halide)
+target_link_libraries(learn_halide PRIVATE Halide::Halide Halide::ImageIO)
